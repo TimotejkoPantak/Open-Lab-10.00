@@ -7,8 +7,9 @@ namespace Open_Lab_10._00
         static void Main(string[] args)
         {
             Book LOTR = new Book();
-            LOTR.Informations("Harry Potter", 430);
-            Console.WriteLine(LOTR.Title);
+            LOTR.Informations("Harry Potter", 430, "Fantasy" ,"J.K Rowling", 2001 );
+            LOTR.Statement();
         }
+
     }
 }
