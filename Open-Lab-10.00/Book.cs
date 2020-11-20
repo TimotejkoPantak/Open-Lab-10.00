@@ -4,27 +4,48 @@ using System.Text;
 
 namespace Open_Lab_10._00
 {
-     public class Book
-    { 
-        public void Informations(string title, int pages, string category, string author, int releaseDate)
+    public class Book
+    {
+        public string Title
         {
-            Title = title;
-            Pages = pages;
-            Category = category;
-            Author = author;
-            ReleaseDate = releaseDate;
+            get => title;
+            set => title = value;
         }
 
-        private string Title { get; set; }
-        private int Pages { get; set; }
-        private string Category { get; set; }
-        private string Author { get; set; }
-        private int ReleaseDate { get; set; }
+        public int Pages
+        {
+            get => pages;
+            set => pages = value;
+        }
+
+        public string Category
+        {
+            get => category;
+            set => category = value;
+        }
+
+        public string Author
+        {
+            get => author;
+            set => author = value;
+        }
+
+        public int ReleaseDate
+        {
+            get => releaseDate;
+            set => releaseDate = value;
+        }
+
+        private string title;
+        private int pages;
+        private string category;
+        private string author;
+        private int releaseDate;
+
 
         public void Statement()
         {
-            Console.WriteLine($"{Title}, {Pages}, {Category}, {Author}, {ReleaseDate}");
+            Console.WriteLine($"{Title},{Pages},{Category},{Author},{ReleaseDate}");
         }
-        
-       }
+    }
 }
