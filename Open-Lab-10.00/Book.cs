@@ -24,10 +24,7 @@ namespace Open_Lab_10._00
             ReleaseDate = releaseDate;
         }
 
-        public void Statement()
-        {
-            Console.WriteLine($"{Title},{Pages},{Category},{Author},{ReleaseDate}");
-        }
+        
 
 
         
