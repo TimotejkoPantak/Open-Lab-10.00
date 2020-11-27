@@ -6,46 +6,30 @@ namespace Open_Lab_10._00
 {
     public class Book
     {
-        public string Title
+        public string Title { get; set; }
+        public int Pages { get; set; }
+        public string Category { get; set; }
+        public string Author { get; set; }
+        public int ReleaseDate { get; set; }
+
+        
+
+
+        public void BookInfo(string title, int pages, string category,string author, int releaseDate)
         {
-            get => title;
-            set => title = value;
+            Title = title;
+            Pages = pages;
+            Category = category;
+            Author = author;
+            ReleaseDate = releaseDate;
         }
-
-        public int Pages
-        {
-            get => pages;
-            set => pages = value;
-        }
-
-        public string Category
-        {
-            get => category;
-            set => category = value;
-        }
-
-        public string Author
-        {
-            get => author;
-            set => author = value;
-        }
-
-        public int ReleaseDate
-        {
-            get => releaseDate;
-            set => releaseDate = value;
-        }
-
-        private string title;
-        private int pages;
-        private string category;
-        private string author;
-        private int releaseDate;
-
 
         public void Statement()
         {
             Console.WriteLine($"{Title},{Pages},{Category},{Author},{ReleaseDate}");
         }
+
+
+        
     }
 }
