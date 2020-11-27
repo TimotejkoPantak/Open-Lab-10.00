@@ -12,7 +12,7 @@ namespace Open_Lab_10._00
             LOTR.Category = "Fantasy";
             LOTR.Author = "J.K. Rowling";
             LOTR.ReleaseDate = 2010;
-            if (LOTR.ReleaseDate <= 1450 || LOTR.ReleaseDate >= 2020)
+            if (LOTR.ReleaseDate >= 1450 || LOTR.ReleaseDate <= 2020)
             {
                 LOTR.ReleaseDate = -1;
             }
