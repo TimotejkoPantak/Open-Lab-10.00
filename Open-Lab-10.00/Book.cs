@@ -6,6 +6,11 @@ namespace Open_Lab_10._00
 {
     public class Book
     {
+
+        /// <summary>
+        /// Create category list for books
+        /// </summary>
+        public static List<string> categoryList = new List<string>() {"detské", "romantické", "náučné", "sci-fi", "dobrodružné"};
         public Book(string title, int pages, string category, string author, int releaseDate)
         {
             Title = title;
@@ -13,7 +18,7 @@ namespace Open_Lab_10._00
             Category = category;
             Author = author;
             ReleaseDate = releaseDate;
-            if(releaseDate  < 1450 || releaseDate > 2020)
+            if(releaseDate < 1450 || releaseDate > 2020)
             {
                 ReleaseDate = -1;
             }
@@ -21,6 +26,7 @@ namespace Open_Lab_10._00
             {
                ReleaseDate = releaseDate;
             }
+
             if(pages < 0)
             {
                 Pages = 1;
@@ -44,7 +50,7 @@ namespace Open_Lab_10._00
 
         public string Title { get; set; }
         public int Pages { get; set; }
-        public string Category { get; set; }
+        public string Category { private get; set; }
         public string Author { get; set; }
         public int ReleaseDate { get; set; }
         
@@ -54,5 +60,7 @@ namespace Open_Lab_10._00
         {
             Console.Write($"{Title}\n{Pages}\n{Category}\n{Author}\n{ReleaseDate}\n\n");
         }
+        
+        
     }
 }

@@ -31,7 +31,7 @@ namespace Open_Lab_10._00
                 }
                 if (choose == "HOBIT")
                 {
-                    Book HOBIT = new Book("Ake drahe je yadaro", 262, "Education", "Dan Arielz", 2020);
+                    Book HOBIT = new Book("Ake drahe je zadarmo", 262,Book.categoryList[2], "Dan Arielz", 2020);
                     HOBIT.Statement();
                     Console.ReadKey();
                 }
